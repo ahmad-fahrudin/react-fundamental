@@ -2,26 +2,31 @@
   {
     "title": "Introduction to React",
     "tags": ["React", "JavaScript", "Frontend"],
-    "date": "2024-12-13"
+    "date": "2024-12-13",
+    "isNew": true
   },
   {
     "title": "Understanding JSX",
     "tags": ["React", "JSX", "UI"],
-    "date": "2024-12-12"
+    "date": "2024-12-12",
+    "isNew": false
   },
   {
     "title": "State Management in React",
     "tags": ["React", "State", "Hooks"],
-    "date": "2024-12-11"
+    "date": "2024-12-11",
+    "isNew": false
   },
   {
     "title": "Building with React Router",
     "tags": ["React", "Router", "Navigation"],
-    "date": "2024-12-10"
+    "date": "2024-12-10",
+    "isNew": false
   },
   {
     "title": "Optimizing React Performance",
     "tags": ["React", "Performance", "Optimization"],
-    "date": "2024-12-09"
+    "date": "2024-12-09",
+    "isNew": true
   }
 ]
