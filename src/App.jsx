@@ -1,14 +1,12 @@
-import './App.css'
-import Article from './components/Article'
+import "./App.css";
+import Homepage from "./pages";
 
 function App() {
   return (
     <div className="App">
-      <Article name="Fahrudin" titles={["Tutorial React", "Node Js"]} />
-      <br />
-      <Article name="Fahrudin" titles={["Tutorial React", "Node Js"]} />
+      <Homepage />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
