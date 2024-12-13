@@ -1,18 +1,13 @@
-function Article() {
-    const name = 'Udin React'
-    const titles = ['React', 'Vue', 'Angular']
+function Article(props) {
 
   return (
-    <div>
-          <div>{titles.map((title) => {
-              return <>
-              <div>{title}</div>
-                  <div>{title}</div>
-              </>
+    <>
+     <div>{ props.name }</div>
+        <div>{props.titles.map((title) => {
+            return (<div>{title}</div>);
             })}
-          </div>
-          <div>{ name }</div>
-    </div>
+        </div>
+    </>
   )
 }
 
