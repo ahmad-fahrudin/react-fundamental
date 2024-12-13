@@ -1,22 +1,20 @@
-import { useState, useEffect } from "react";
+import { useLoaderData, Link } from "react-router-dom";
 
-function Blogs() {
-  const [posts, setPosts] = useState([]);
+useLoaderData;
 
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/todos/")
-      .then((response) => response.json())
-      .then((json) => setPosts(json));
-  }, []);
+function Blog() {
+  const posts = useLoaderData();
 
   return (
     <>
       <h1>Welcome to the Blogs</h1>
       {posts.map((item, index) => (
-        <div key={index}>- {item.title}</div>
+        <div key={index}>
+          <Link to={`/blog/${item.id}`}>- {item.title}</Link>
+        </div>
       ))}
     </>
   );
 }
 
-export default Blogs;
+export default Blog;
